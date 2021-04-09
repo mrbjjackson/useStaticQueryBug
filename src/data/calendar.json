@@ -3,15 +3,27 @@
     "nodes": [
       {
         "summary": "Little Wing Music",
-        "date": "Thursdays at 4pm"
+        "date": "Tuesday 14th Feb"
       },
       {
-        "summary": "Hickory Dickory Rock - Maxi Class",
-        "date": "Tuesdays at 10am"
+        "summary": "Hickory Dickory Rock - Wednesday Class",
+        "date": "Wednesday 15th Feb"
       },
       {
-        "summary": "Hickory Dickory Rock - Mini Class",
-        "date": "Tuesdays at 11am"
+        "summary": "Hickory Dickory Rock - Thursday Class",
+        "date": "Thursday at 11am"
+      },
+      {
+        "summary": "Yoga",
+        "date": "Friday at 6pm"
+      },
+      {
+        "summary": "Art Class",
+        "date": "Saturday at 10am"
+      },
+      {
+        "summary": "Art Class",
+        "date": "Sunday at 11am"
       }
     ]
   }

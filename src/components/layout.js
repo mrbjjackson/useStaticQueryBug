@@ -12,7 +12,7 @@ import {  mainHolder } from "./styles/layout.module.scss"
 const Layout = ({ children}) => {
 
 
-  console.log('Rendered layout')
+  console.log('Rendered Layout')
 
   return (
     <div className={mainHolder}>

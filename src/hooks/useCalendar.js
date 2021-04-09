@@ -15,7 +15,6 @@ export const useCalendar = ( activityName ) => {
     }
   }
   `)
-  console.log(data)
   let entries = data.allDataJson.nodes[1].calendarEvents.nodes
 
   if(activityName) {

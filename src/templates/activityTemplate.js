@@ -1,43 +1,42 @@
 import React from "react"
 import { graphql } from "gatsby"
-import ActivityCalendar from '../components/ActivityCalendar'
 import NextMeeting from '../components/NextMeeting'
 import { useCalendar } from '../hooks/useCalendar'
 
 
 
-
-export default function ActivityTemplate({ data, ...props }) {
+export default function ActivityTemplate({ data, pageContext }) {
   console.log('rendered: activityPage')
 
-  const a = data.allDataJson.nodes[0].activities // Activity
-  const calendar = useCalendar(50, a.title)
+  const activity = data.allDataJson.nodes[0].activities.nodes.find(a => a.id === pageContext.id)
+  const calendar = useCalendar(50, activity.title)
   const nextMeeting = calendar.length > 0 ? calendar[0] : null
 
 
   return (
     <article>
-      <h1>{a.title}</h1>
+      <h1>{activity.title}</h1>
 
       <section>
-        <div dangerouslySetInnerHTML={{ __html: a.content }} />
+        {activity.content}
       </section>
 
       <section>
-        <NextMeeting activity={a} nextMeeting={nextMeeting} />
-        {/* <ActivityCalendar activity={a} calendar={calendar}/> */}
+        <NextMeeting activity={activity} nextMeeting={nextMeeting} />
       </section>
 
     </article>
   )
 }
 export const query = graphql`
-  query($id: String!) {
-    allDataJson(filter: {activities: {nodes: {elemMatch: {id: {eq: $id}}}}}) {
+  query{
+    allDataJson {
       nodes {
         activities {
           nodes {
             id
+            title
+            content
           }
         }
       }
