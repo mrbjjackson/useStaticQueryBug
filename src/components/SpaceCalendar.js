@@ -1,6 +1,6 @@
 import React from 'react'
-import { useActivities } from '../../hooks/useActivities'
-import { Wrap } from '../utilities/Wrap'
+import { useActivities } from '../hooks/useActivities'
+import { Wrap } from './utilities/Wrap'
 import { Link } from 'gatsby'
 
 export default function SpaceCalendar({calendar, spaceName}) {

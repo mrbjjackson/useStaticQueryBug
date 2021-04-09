@@ -1,39 +1,26 @@
 import { useStaticQuery, graphql } from "gatsby"
 
-export const useCalendar = ( count, activityName ) => {
+export const useCalendar = ( activityName ) => {
   const data = useStaticQuery(graphql`
   query CalendarDataQuery {
-    allCalendarEvent {
+    allDataJson {
       nodes {
-        start {
-          dateTime
+        calendarEvents {
+          nodes {
+            date
+            summary
+          }
         }
-        end {
-          dateTime
-        }
-        description
-        organizer {
-          displayName
-          email
-        }
-        id
-        eventType
-        summary
       }
     }
   }
   `)
-
-  let entries = data.allCalendarEvent.nodes
+  console.log(data)
+  let entries = data.allDataJson.nodes[1].calendarEvents.nodes
 
   if(activityName) {
     entries = entries.filter( entry => entry.summary.includes(activityName) )
   }
-
-  if(entries && count) {
-    entries = entries.splice(0, count)
-  }
-
 
   return entries
 }

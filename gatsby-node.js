@@ -1,20 +1,21 @@
-const { notDeepEqual } = require("assert")
 const path = require(`path`)
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      allWpActivity {
+      allDataJson {
         nodes {
-          slug
-          id
+          activities {
+            nodes {
+              id
+            }
+          }
         }
       }
     }
   `).then(result => {
-
-    result.data.allWpActivity.nodes.forEach(node => {
+    result.data.allDataJson.nodes[0].activities.nodes.forEach(node => {
       createPage({
         path: `activities/${node.slug}`,
         component: path.resolve(`./src/templates/activityTemplate.js`),

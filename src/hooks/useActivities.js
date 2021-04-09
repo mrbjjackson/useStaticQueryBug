@@ -3,14 +3,17 @@ import { useStaticQuery, graphql } from "gatsby"
 export const useActivities = ( count=50 ) => {
   const data = useStaticQuery(graphql`
   query ActivityDataQuerys {
-    allWpActivity {
+    allDataJson {
       nodes {
-        title
-        link
+        activities {
+          nodes {
+            id
+          }
+        }
       }
     }
   }
   `)
   console.log('from useActivities', data)
-  return data.allWpActivity.nodes.splice(0, count)
+  return data.allDataJson.nodes0[0].nodes
 }

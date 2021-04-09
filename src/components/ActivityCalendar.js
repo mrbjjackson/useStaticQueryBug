@@ -1,5 +1,5 @@
 import React from 'react'
-import getDate from '../utilities/getDate'
+import getDate from './utilities/getDate'
 
 export default function ActivityCalendar({activity, calendar}) {
 

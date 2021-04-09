@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import './styles/hamburgers.min.css'
 import {ul} from './styles/MainNav.module.scss'
 
 export default function MainNav() {

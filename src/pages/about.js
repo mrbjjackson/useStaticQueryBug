@@ -7,17 +7,19 @@ const AboutPage = ({data}) => {
   return (
     <article>
       <h1>About</h1>
-      <div dangerouslySetInnerHTML={{ __html: data.about.content }} />
+      <p>
+        Minimum reproduction for my useStaticQuery bug
+        </p>
     </article>
   )
 }
 
 export default AboutPage
 
-export const query = graphql`
-  query {
-    about: wpPage(title: {eq: "About"}) {
-      content
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     about: wpPage(title: {eq: "About"}) {
+//       content
+//     }
+//   }
+// `

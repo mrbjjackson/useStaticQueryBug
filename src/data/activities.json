@@ -1,0 +1,31 @@
+{
+  "activities": {
+    "nodes": [
+      {
+        "id": "0",
+        "title": "Little Wing Music",
+        "content": "Music for toddlers",
+        "slug": "little-wing"
+      },
+      {
+        "id": "1",
+        "title": "Hickory Dickory Rock",
+        "content": "Rock 'n Roll Dance class",
+        "slug": "hickory-dickory"
+
+      },
+      {
+        "id": "2",
+        "title": "Art Class",
+        "content": "Learn to paint",
+        "slug": "art-class"
+      },
+      {
+        "id": "3",
+        "title": "Yoga",
+        "content": "Namaste with us",
+        "slug": "yoga"
+      }
+    ]
+  }
+}
