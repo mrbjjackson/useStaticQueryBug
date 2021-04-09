@@ -2,8 +2,8 @@ import * as React from "react"
 
 const IndexPage = () => (
 <article>
-  <h1>MMI Website</h1>
-  <p>Welcome to the MMI.</p>
+  <h1>Minimal Reproduction Site</h1>
+  <p>useStaticQuery + createPage bug</p>
 </article>
 )
 

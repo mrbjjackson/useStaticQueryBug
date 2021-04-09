@@ -6,11 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
-    "dayjs": "^1.10.4",
-    "formik": "^2.2.6",
-    "framer-motion": "^4.1.2",
     "gatsby": "^3.2.1",
-    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-gatsby-cloud": "^2.2.0",
     "gatsby-plugin-google-gtag": "^3.2.0",
     "gatsby-plugin-image": "^1.2.0",
@@ -20,18 +16,14 @@
     "gatsby-plugin-sass": "^4.2.0",
     "gatsby-plugin-sharp": "^3.2.0",
     "gatsby-source-filesystem": "^3.2.0",
-    "gatsby-source-google-calendar": "^1.1.1",
-    "gatsby-source-wordpress": "^5.2.1",
     "gatsby-transformer-json": "^3.2.0",
     "gatsby-transformer-sharp": "^3.2.0",
-    "googleapis": "^39.2.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.32.8",
-    "yup": "^0.32.9"
+    "sass": "^1.32.8"
   },
   "devDependencies": {
     "prettier": "2.2.1"
