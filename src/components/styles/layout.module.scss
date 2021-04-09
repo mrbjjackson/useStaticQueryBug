@@ -1,0 +1,22 @@
+.mainHolder {
+  height:100%;
+  width:100%;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items: center;
+  flex-grow:1;
+}
+
+.content {
+  background: transparent;
+  position:relative;
+  z-index:20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow:1;
+  width:90vw;
+
+}
