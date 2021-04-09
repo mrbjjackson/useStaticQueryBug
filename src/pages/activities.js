@@ -5,14 +5,10 @@ import Activity from '../components/Activity'
 export default function EventsPage({ data }) {
   const activities = data.allWpActivity.nodes
 
-  const groups = activities.filter(activity => {
-    return (activity.activityMetadata.activityType === 'Event')
-  })
-
   return (
     <article>
       <section>
-        { groups.map(g => <Activity key={g.id} activity={g} /> )  }
+        { activities.map(g => <Activity key={g.id} activity={g} /> )  }
       </section>
     </article>
   )
@@ -25,19 +21,6 @@ export const query = graphql`
         slug
         uri
         id
-        featuredImage {
-          node {
-            localFile {
-              childImageSharp {
-                gatsbyImageData(
-                  width: 800
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-            }
-          }
-        }
         activityMetadata {
           activityType
           contactEmail

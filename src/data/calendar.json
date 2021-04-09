@@ -1,0 +1,18 @@
+{
+  "allCalendarEvent": {
+    "nodes": [
+      {
+        "summary": "Little Wing Music",
+        "date": "Thursdays at 4pm"
+      },
+      {
+        "summary": "Hickory Dickory Rock - Maxi Class",
+        "date": "Tuesdays at 10am"
+      },
+      {
+        "summary": "Hickory Dickory Rock - Mini Class",
+        "date": "Tuesdays at 11am"
+      }
+    ]
+  }
+}

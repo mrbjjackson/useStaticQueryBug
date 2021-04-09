@@ -1,5 +1,4 @@
 import React from 'react'
-import {calendarHolder} from './styles/Calendars.module.scss'
 import { useActivities } from '../../hooks/useActivities'
 import { Wrap } from '../utilities/Wrap'
 import { Link } from 'gatsby'
@@ -15,7 +14,7 @@ export default function SpaceCalendar({calendar, spaceName}) {
     <> 
     { 
       entries.length > 0 &&
-      <div className={calendarHolder}>
+      <div>
         <h4>What's on in {spaceName}</h4>
         {entries.map(entry => {
 

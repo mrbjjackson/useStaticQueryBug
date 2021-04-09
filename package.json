@@ -22,6 +22,7 @@
     "gatsby-source-filesystem": "^3.2.0",
     "gatsby-source-google-calendar": "^1.1.1",
     "gatsby-source-wordpress": "^5.2.1",
+    "gatsby-transformer-json": "^3.2.0",
     "gatsby-transformer-sharp": "^3.2.0",
     "googleapis": "^39.2.0",
     "prop-types": "^15.7.2",
